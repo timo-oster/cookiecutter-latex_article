@@ -1,0 +1,6 @@
+%!TEX root = ../{{cookiecutter.project_name}}.tex
+\begin{tikzpicture}
+    \node[rectangle, draw] (doc) {Document};
+    \node[below=of doc, rectangle, draw] (word) {Word};
+    \draw[thick, -latex] (word.north) -- (doc.south);
+\end{tikzpicture}
