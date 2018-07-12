@@ -1,0 +1,73 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[utf8]{inputenc} % allow using UTF-8 characters in input
+
+\usepackage{newtxtext,
+            newtxmath}      % times roman fonts
+
+% typesetting
+\usepackage{microtype}      % small adjustments for better-looking text
+\usepackage{booktabs}       % commands for setting good tables
+\usepackage{tabularx}       % tables with fixed overall width
+\usepackage{hyperref}       % hyperlinking in PDF output
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+% math
+\usepackage{amsmath}        % high-quality math typesetting
+\usepackage{amsfonts}       % more fonts for math
+\usepackage{amssymb}        % math symbols
+\usepackage{mathtools}      % more tools for math typesetting
+\usepackage{bm}             % make math symbols bold
+\usepackage{cool}
+
+% graphics
+\usepackage{graphicx}       % include pictures
+\graphicspath{{figures/}}
+
+\usepackage{xcolor}         % defining and using colors
+
+\usepackage{tikz}           % creating drawings in latex
+\usetikzlibrary{
+    calc
+}
+
+\usepackage{pgfplots}       % plotting library
+\pgfplotsset{compat=1.15}
+
+\usepackage{caption}        % captions for floats
+
+% bibliography
+\usepackage{natbib}         % bibliography and reference styles
+
+% miscellaneous
+\usepackage{todonotes}      % todo annotations
+\usepackage{import}         % used by exported graphics from inkscape
+
+% commands and definitions
+\newlength{\figurewidth}
+
+\input{macros}              % math macros
+
+\title{{{cookiecutter.title}}}
+
+\author{{cookiecutter.full_name}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} % (fold)
+\label{sec:introduction}
+%
+
+%
+% section introduction (end)
+
+\bibliographystyle{alpha}
+\bibliography{bibliography}
+
+\end{document}
